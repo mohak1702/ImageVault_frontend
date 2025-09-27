@@ -28,7 +28,7 @@ export default function Receiver() {
     formData.append("pin", pin);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/decrypt", {
+      const response = await fetch("https://imagevault-backend.onrender.com", {
         method: "POST",
         body: formData,
       });
